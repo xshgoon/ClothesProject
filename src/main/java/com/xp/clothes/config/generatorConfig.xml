@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry
+		location="F:\tools\Maven\Repository\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar" />
+	<context id="context1">
+		<jdbcConnection
+			connectionURL="jdbc:mysql://localhost:3306/project?serverTimezone=UTC"
+			driverClass="com.mysql.cj.jdbc.Driver" password="root" userId="root" />
+		<javaModelGenerator targetPackage="com.xp.clothes.bean"
+			targetProject="clothes/src/main/java" />
+		<sqlMapGenerator targetPackage="com.xp.clothes.mapper.sqlxml"
+			targetProject="clothes/src/main/java" />
+		<javaClientGenerator targetPackage="com.xp.clothes.mapper"
+			targetProject="clothes/src/main/java" type="XMLMAPPER" />
+
+		<table tableName="factory" domainObjectName="Factory"></table>
+		<table tableName="factory_scale" domainObjectName="FactoryScale"></table>
+		<table tableName="order" domainObjectName="Order"></table>
+		<table tableName="user" domainObjectName="User"></table>
+
+	</context>
+</generatorConfiguration>
