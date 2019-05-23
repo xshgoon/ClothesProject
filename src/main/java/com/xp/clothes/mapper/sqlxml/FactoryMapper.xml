@@ -346,4 +346,9 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
+
+  <select id="listFactory" resultType="Factory">
+    select * from factory WHERE pnumber=4
+  </select>
+
 </mapper>
