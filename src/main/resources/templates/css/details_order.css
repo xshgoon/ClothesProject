@@ -66,14 +66,14 @@
 }
 p#tishi{
     display: inline-block;
-    width: 450px;
+    width: 390px;
     line-height: 25px;
-    margin: 40px auto 0px 150px;
+    margin: 0px auto 0px 0px;
     color: white;
     font-weight: bold;
     font-size: 15px;
     background-color: orange;
-    text-align: center;
+    text-align: left;
 }
 #right{
     width: 250px;
