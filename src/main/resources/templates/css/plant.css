@@ -1,0 +1,129 @@
+#center{
+    padding-top: 15px;
+    width: 1180px;
+}
+#choice{
+    border-bottom: 4px #aeaeae solid;
+}
+#choice ul:nth-child(1){
+    text-indent: 1em;
+    line-height: 40px;
+    border-top: 4px orange solid;
+    border-bottom: 4px orange solid;
+    margin-bottom: 10px;
+}
+#choice ul:nth-child(1) li{
+    margin-left: -30px ;
+}
+#choice ul:nth-child(1) a{
+    display: inline-block;
+    width: 130px;
+    line-height: 38px;
+    text-align: center;
+    color: #595955;
+    font-weight: bold;
+    border-radius: 4px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+}
+#choice ul{
+    line-height: 50px;
+    border-bottom: 1px #cacaca dashed;
+    padding: 0 15px;
+    margin: 0 40px;
+}
+#choice ul li h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #595955;
+}
+#choice ul li{
+    font-size: 16px;
+    margin: auto 10px;
+}
+#choice ul li a{
+    display: inline-block;
+    color: #595955;
+    width: 130%;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+#choice ul li a:hover{
+    color: white;
+    background: orange;
+}
+#choice ul li .now{
+    color: white;
+    background: orange;
+}
+
+#list{
+    padding-top: 20px;
+    padding-left: 15px;
+    color: #595955;
+    font-size: 15px;
+}
+#list li{
+    display: -webkit-box;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 1px #fc930c solid;
+}
+#list a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #595955;
+}
+#list a:hover{
+    color: orange;
+}
+#list ul div:nth-child(1) span{
+    display: inline-block;
+    width: 200px;
+    height: 130px;
+    background: #8a8a8a;
+    margin: 0px 0px 0px 10px;
+    overflow: hidden;
+}
+#list img{
+    display: inline-block;
+    max-width: 200px;
+}
+#list ul div:nth-child(2){
+    padding: 0px 0px 0 70px;
+}
+#list ul div:nth-child(2) span{
+    padding: 0 3px;
+    line-height: 20px;
+    background-color: orange;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#list ul div:nth-child(3),
+#list ul div:nth-child(4){
+    padding: 59px 0px 0 130px;
+}
+#list div p{
+    line-height: 35px;
+}
+#list input{
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    line-height: 33px;
+    padding: 0 15px;
+    border-radius: 6px;
+}
+.blog-bottom{
+    margin-left: 280px;
+}

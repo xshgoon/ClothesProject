@@ -1,0 +1,134 @@
+.center{
+    padding-top: 30px;
+}
+#left{
+    width: 900px;
+    margin: 0px;
+    padding: 40px 30px;
+    background-color: #fff7e4;
+}
+#left div{
+    margin-bottom: 20px;
+}
+#left div:nth-child(1){
+    padding-bottom: 10px;
+    border-bottom: 2px orange solid;
+}
+#left div:nth-child(1) h4{
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+}
+#left div:nth-child(1) span{
+    margin: auto 100px auto 20px;
+    color: orange;
+    font-size: 14px;
+}
+#left div:nth-child(2) p{
+    width: 340px;
+    height: 375px;
+    overflow: hidden;
+}
+#left div:nth-child(2) img{
+    width: 340px;
+    margin-bottom: 3px;
+}
+#left div:nth-child(2) a{
+    display: inline-block;
+    width: 81.5px;
+    height: 81px;
+    overflow: hidden;
+}
+#left div:nth-child(2) a img{
+    width: 81px;
+}
+#left div:nth-child(3){
+    background-color: white;
+    position: absolute;
+    top: 410px;
+    left: 533px;
+    width: 440px;
+    padding: 20px 10px;
+}
+#left div:nth-child(3) h4{
+    color: #ff8d07;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#left div:nth-child(3) ul li{
+    list-style: url("../images/icon1.gif") inside;
+    line-height: 30px;
+    border-bottom: 1px orange dashed;
+    margin-bottom: 15px;
+    margin-right: 33px;
+}
+p#tishi{
+    display: inline-block;
+    width: 450px;
+    line-height: 25px;
+    margin: 40px auto 0px 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: orange;
+    text-align: center;
+}
+#right{
+    width: 250px;
+    position: absolute;
+    top: 390px;
+    right: 80px;
+    border: 1px #ffbc45 solid;
+    border-top: none;
+}
+#right h4{
+    background-color: orange;
+    border-radius: 4px 4px 0 0;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 10px;
+}
+#right h5{
+    font-size: 16px;
+    line-height: 35px;
+    border-bottom: 1px #ffbc45 dashed;
+    margin: 0 15px;
+}
+#right p{
+    line-height: 40px;
+    margin: 0 15px;
+    border-bottom: 1px #ffbc45 dashed;
+}
+
+#help{
+    color: orange;
+    font-weight: bold;
+    width: 900px;
+    padding: 35px 130px;
+    margin: 25px 0;
+    background-color: #fff7e4;
+}
+#help span{
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px orange solid;
+    border-radius: 5px;
+}
+#help p{
+    margin-top: 30px;
+    text-align: center;
+}
+#bottom{
+    width: 900px;
+    padding: 10px 30px;
+    background: #fff7e4;
+}
+#bottom img{
+    width: 600px;
+    height: 600px;
+    margin-bottom: 3px;
+    margin-left: 120px;
+}

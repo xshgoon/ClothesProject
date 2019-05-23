@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>订单详情</title>
+    <meta charset="UTF-8"/>
+    <link href="../css/home.css" rel="stylesheet" type="text/css">
+    <link href="../css/details_order.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/home.js"></script>
+</head>
+<body>
+<div id="body"></div>
+<!--start-header-->
+<div id="home" class="header">
+    <div class="top-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt=""></a>
+            </div>
+            <!--start-top-nav-->
+            <div class="top-nav">
+                <ul>
+                    <li class="active"><a id="login_a" class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span>登 录</a></li>
+                    <li><a id="signup_a" class="play-icon popup-with-zoom-anim" href="#small-dialog1">注 册</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div id="small-dialog" class="mfp-hide">
+        <div class="login">
+            <h3>登录</h3>
+            <h4>请输入帐号密码</h4>
+            <form action="" method="post">
+                <input type="text" name="pn" value="" placeholder="请输入手机号" pattern="1[3578]\d{9}" required/>
+                <input type="password" name="password" value="" placeholder="请输入密码" pattern="[\dA-Za-z]{6,16}" required/>
+                <input type="submit" value="登录" />
+            </form>
+
+        </div>
+    </div>
+    <div id="small-dialog1" class="mfp-hide">
+        <div class="signup">
+            <h3>注册</h3>
+            <h4>请输入注册信息</h4>
+            <form action="" method="post">
+                <input type="text" name="pn" value="" placeholder="请输入手机号"  pattern="1[3578]\d{9}" required />
+                <input type="password" name="password" value="" placeholder="请输入密码,6-16位字母或数字组成" pattern="[\dA-Za-z]{6,16}" required />
+                <input type="password" name="password2" value="" placeholder="请再次输入密码"/>
+                <input type="submit"  value="注册"/>
+            </form>
+        </div>
+    </div>
+    <div class="navgation">
+        <div class="menu">
+            <a class="toggleMenu" href="#"><img src="../images/menu-icon.png" alt="" /> </a>
+            <ul class="nav" id="nav">
+                <li><a href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="order.html">订单中心</a></li>
+                <li><a href="plant.html">工厂中心</a></li>
+                <li><a href="personage.html">个人中心</a></li>
+            </ul>
+        </div>
+        <div class="search2">
+            <form action="" method="post">
+                <input type="text" value="" placeholder="Search..."/>
+                <input type="submit" value="">
+            </form>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div class="contact">
+    <div class="center">
+        <div id="left">
+            <!--订单详情-->
+            <div>
+                <h4>拼多多低端货</h4>
+                <span>发布日期：2018-11-13</span> <span>剩余时间23天</span>
+            </div>
+            <div>
+                <p><img src="../images/WeyELPpkIh.jpg"></p>
+                <a href="#"><img src="../images/WeyELPpkIh.jpg"></a>
+                <a href="#"><img src="../images/yi1.jpg"></a>
+                <a href="#"><img src="../images/yi2.jpg"></a>
+                <a href="#"><img src="../images/yi3.jpg"></a>
+            </div>
+            <div>
+                <h4>订单简介</h4>
+                <ul>
+                    <li>预计数量：&nbsp;&nbsp;&nbsp;&nbsp;700件</li>
+                    <li>预算单价：&nbsp;&nbsp;&nbsp;&nbsp;15元</li>
+                    <li>发布日期：&nbsp;&nbsp;&nbsp;&nbsp;2018-11-13</li>
+                    <li>交货日期：&nbsp;&nbsp;&nbsp;&nbsp;2018-12-20</li>
+                    <li>订单类型：&nbsp;&nbsp;&nbsp;&nbsp;包工包料</li>
+                    <li>产品档次：&nbsp;&nbsp;&nbsp;&nbsp;中低档</li>
+                    <li>期待区域：&nbsp;&nbsp;&nbsp;&nbsp;广东省——东莞市</li>
+                    <li>产品类别：&nbsp;&nbsp;&nbsp;&nbsp;针织服装——普通针织服装</li>
+                    <li>联系电话：&nbsp;&nbsp;&nbsp;&nbsp;13424352435（林超龙）</li>
+                </ul>
+            </div>
+            <p id="tishi">温馨提示：如订单已完成交易，请及时下架产品，谢谢合作</p>
+        </div>
+        <div id="right">
+            <h4> 发单方信息</h4>
+            <h5>林超龙</h5>
+            <p>主营行业：包工包料</p>
+            <p>主要产品：针织服装——普通针织服装</p>
+            <p>所在地区：广东省东莞市</p>
+            <h5>联系信息</h5>
+            <p>134********</p>
+        </div>
+        <div id="help">
+            <span>选择订单，找到订单</span> >>
+            <span>查看订单联系方式</span> >>
+            <span>双方洽谈达成意向</span>
+            <p>请确定您符合接单要求再报价，以提升接单成功的几率</p>
+        </div>
+        <div id="bottom">
+            <!--详情大图-->
+            <img src="../images/WeyELPpkIh.jpg">
+            <img src="../images/yi1.jpg">
+            <img src="../images/yi2.jpg">
+            <img src="../images/yi3.jpg">
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer-text">
+            <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="#" >服源网</a> - Collect from </p>
+        </div>
+    </div>
+    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+</body>
+</html>

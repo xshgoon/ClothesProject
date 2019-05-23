@@ -1,0 +1,117 @@
+#center{
+    padding-top: 15px;
+    width: 1180px;
+}
+#choice{
+    border-bottom: 4px #aeaeae solid;
+}
+#choice p{
+    text-indent: 1em;
+    line-height: 40px;
+    border-top: 4px orange solid;
+    border-bottom: 4px orange solid;
+    margin-bottom: 10px;
+}
+#choice p span{
+    display: inline-block;
+    width: 130px;
+    line-height: 38px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: #ffce15;
+    border-radius: 4px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+}
+#choice ul{
+    line-height: 50px;
+    border-bottom: 1px #cacaca dashed;
+    padding: 0 15px;
+    margin: 0 40px;
+}
+#choice ul li h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #595955;
+}
+#choice ul li{
+    font-size: 16px;
+    margin: auto 10px;
+}
+#choice ul li a{
+    display: inline-block;
+    color: #595955;
+    width: 130%;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+#choice ul li .now{
+    color: white;
+    background: orange;
+}
+#choice ul li a:hover{
+    color: white;
+    background: orange;
+}
+
+#list{
+    padding-top: 20px;
+    padding-left: 15px;
+    color: #595955;
+    font-size: 15px;
+}
+#list li{
+    display: -webkit-box;
+    padding-bottom: 15px;
+    border-bottom: 1px #fc930c solid;
+}
+#list a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #595955;
+}
+#list a:hover{
+    color: orange;
+}
+#list span{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(to right,gainsboro,white,white,gainsboro);
+    margin: 8px 0px 0px 10px;
+
+}
+#list img{
+    display: inline-block;
+    width: 120px;
+}
+#list ul div:nth-child(2),
+#list ul div:nth-child(3),
+#list ul div:nth-child(4){
+    padding: 70px 0px 0 70px;
+}
+#list ul div:nth-child(5){
+    padding: 80px 0px 0 140px;
+}
+#list div p{
+    line-height: 35px;
+}
+#list input{
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    line-height: 33px;
+    padding: 0 15px;
+    border-radius: 6px;
+}
+.blog-bottom{
+    margin-left: 280px;
+}

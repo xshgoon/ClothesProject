@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>关于我们</title>
+	<meta charset="UTF-8"/>
+	<link href="../css/home.css" rel="stylesheet" type="text/css">
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/home.js"></script>
+</head>
+<body>
+	<div id="body"></div>
+	<!--start-header-->
+	<div id="home" class="header">
+
+		<div class="top-header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="../images/logo.png" alt=""></a>
+				</div>
+				<!--start-top-nav-->
+				<div class="top-nav">
+					<ul>
+						<li class="active"><a id="login_a" class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span>登 录</a></li>
+						<li><a id="signup_a" class="play-icon popup-with-zoom-anim" href="#small-dialog1">注 册</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
+		<!---登录框---->
+		<div id="small-dialog" class="mfp-hide">
+			<div class="login">
+				<h3>登录</h3>
+				<h4>请输入帐号密码</h4>
+				<form action="" method="post">
+					<input type="text" name="pn" value="" placeholder="请输入手机号" pattern="1[3578]\d{9}" required/>
+					<input type="password" name="password" value="" placeholder="请输入密码" pattern="[\dA-Za-z]{6,16}" required/>
+					<input type="submit" value="登录" />
+				</form>
+			</div>
+		</div>
+
+		<!--注册框-->
+		<div id="small-dialog1" class="mfp-hide">
+			<div class="signup">
+				<h3>注册</h3>
+				<h4 id="h4_info">请输入注册信息</h4>
+				<form action="" method="post">
+					<input type="text" name="pn" value="" placeholder="请输入手机号"  pattern="1[3578]\d{9}" required />
+					<input id="pas1" type="password" name="password" value="" placeholder="请输入密码,6-16位字母或数字组成" pattern="[\dA-Za-z]{6,16}" required />
+					<input id="pas2" type="password" name="password2" value="" placeholder="请再次输入密码"/>
+					<input id="signup_button" type="submit"  value="注册"/>
+				</form>
+			</div>
+		</div>
+
+		<!--End-header-->
+		<div class="navgation">
+			<div class="menu">
+				<a class="toggleMenu" href="#"><img src="../images/menu-icon.png" alt="" /> </a>
+				<ul class="nav" id="nav">
+					<li><a href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+					<li><a href="order.html">订单中心</a></li>
+					<li><a href="plant.html">工厂中心</a></li>
+					<li><a href="personage.html">个人中心</a></li>
+					<li><a id="now" href="about.html">关于我们</a></li>
+				</ul>
+			</div>
+			<div class="search2">
+				<form action="" method="post">
+					<input type="text" value="" placeholder="Search..."/>
+					<input type="submit" value="">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+
+	</div>
+
+		<!--start-about-->
+		<div class="about">
+			<div class="container">
+				<div class="about-main">
+					<div class="col-md-8 about-left">
+						<h3>衣讯网</h3>
+						<div class="about-left-one">
+							<div class="col-md-4 about-one-left">
+								<img src="../images/1.jpg" alt="">
+							</div>
+							<div class="col-md-8 about-one-left">
+								<h4>衣讯网，是一家专注于服装行业的柔性供应链交易平台。</h4>
+								<p> 接入了“互联网+”营销模式，自主研发了PC端、微信端、移动app等产品。整合全国大量服装供
+									应链服务提供商，包括设计师、工厂、面辅料供应商。衣讯网的愿景：让传统服装产业供应链做
+									得更简单，在衣讯网平台都能得到最大的利益。为了这一梦想，我们将不懈努力！
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="about-left-one">
+							<div class="col-md-4 about-one-left">
+								<img src="../images/2.jpg" alt="">
+							</div>
+							<div class="col-md-8 about-one-left">
+								<h4>衣讯网，是一家专注于服装行业的柔性供应链交易平台。</h4>
+								<p>衣讯网的前身是从事传统零售、连锁、二线批发、一线批发，从几个人的小作坊发展到几百人的
+									工厂，涉及服装设计、开发、品牌运营、生产、销售、国际贸易、原材料、特殊工艺等整个服装
+									产业链各个环节，积累了20年的资源与经验。为广大服装买卖双方提供了透明、公平、诚信、快速的服装快生产交易平台。
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="col-md-4 about-left">
+						<h3>我们的价值观</h3>
+						<ul>
+							<li><a href="#">用户第一 心怀感恩</h3> </a></li>
+							<li><a href="#">斗米之恩，心必念之：用户第一，走近用户，充分了解用户</a></li>
+							<li><a href="#">感恩公司，共同成长：具有主人翁意识，随时随地维护公司</a></li>
+							<li><a href="#">感谢伙伴，共担共享：积极融入团队，具有开放共赢心态，</a></li>
+							<li><a href="#">厚德载物，以德为先：坚持正心做事、正念为人，</a></li>
+							<li><a href="#">心胸坦荡，言行一致，言出必践，直言而有讳；</a></li>
+							<li><a href="#">公平公正，客观评价团队：主动担当，不委过于人</a></li>
+							<li><a href="#">感恩公司，共同成长：具有主人翁意识，随时随地维护公司</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--End-about-->
+		<!--start-choose-->
+		<div class="choose">
+			<div class="container">
+				<div class="choose-top">
+					<h3>为什么选择我们</h3>
+					<P></P>
+				</div>
+				<div class="choose-bottom">
+					<div class="col-md-4 choose-left">
+						<span class="choose-one"> </span>
+						<h4>专业执着 精益求精</h4>
+						<p>
+							有强烈的使命感，成就驱动，勇于承担责任，主动迎接新的任务和挑战，热爱公司，全身心投入，尽职尽责，极致执行，
+							追求卓越，保持好奇心，坚持钻研、持续学习、不断提高专业水平与职业能力
+						</p>
+					</div>
+					<div class="col-md-4 choose-left">
+						<span class="choose-two"> </span>
+						<h4>打破常规 不懈探索</h4>
+						<p>
+							创新的核心目的是为用户创造价值；敏锐预见用户与市场的变化，打破常规、营造人人事事皆可创新的氛围；
+							不懈探索，敢于突破，勇于尝试，不惧失败，善于总结。
+						</p>
+					</div>
+					<div class="col-md-4 choose-left">
+						<span class="choose-tre"> </span>
+						<h4>坚行正道 言行坦荡</h4>
+						<p>
+							厚德载物，以德为先：坚持正心做事、正念为人，坚守正道，用正直的力量积极影响我们周围的人；心胸坦荡，
+							言行一致，言出必践，直言而有讳；公平公正，客观评价团队：主动担当，不委过于人；清正廉洁，严格遵守职业操守
+						</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="choose-bottom">
+					<div class="col-md-4 choose-left">
+						<span class="choose-two"> </span>
+						<h4>坚行正道 言行坦荡</h4>
+						<p>
+							厚德载物，以德为先：坚持正心做事、正念为人，坚守正道，用正直的力量积极影响我们周围的人；心胸坦荡，
+							言行一致，言出必践，直言而有讳；公平公正，客观评价团队：主动担当，不委过于人；清正廉洁，严格遵守职业操守
+						</p>
+					</div>
+					<div class="col-md-4 choose-left">
+						<span class="choose-tre"> </span>
+						<h4>专业执着 精益求精</h4>
+						<p>
+							有强烈的使命感，成就驱动，勇于承担责任，主动迎接新的任务和挑战，热爱公司，全身心投入，尽职尽责，极致执行，
+							追求卓越，保持好奇心，坚持钻研、持续学习、不断提高专业水平与职业能力
+						</p>
+					</div>
+					<div class="col-md-4 choose-left">
+						<span class="choose-one"> </span>
+						<h4>打破常规 不懈探索</h4>
+						<p>
+							创新的核心目的是为用户创造价值；敏锐预见用户与市场的变化，打破常规、营造人人事事皆可创新的氛围；
+							不懈探索，敢于突破，勇于尝试，不惧失败，善于总结。
+						</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--End-choose-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-text">
+				<p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="#" >服源网</a> - Collect from </p>
+			</div>
+		</div>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+     </div>
+</body>
+</html>
