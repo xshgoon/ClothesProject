@@ -13,7 +13,7 @@ public class FactoryService {
     private FactoryMapper factoryMapper;
 
     public List<Factory> listFactory(){
-        return factoryMapper.listFactory();
+        return factoryMapper.selectByExample(null);
     }
 
 }
