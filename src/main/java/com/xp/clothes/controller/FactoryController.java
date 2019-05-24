@@ -1,6 +1,6 @@
 package com.xp.clothes.controller;
 
-import com.xp.clothes.bean.Factory;
+
 import com.xp.clothes.service.FactoryService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +11,10 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * 工厂模块接口
+ * @Description: 工厂模块接口
+ * @author: youchuang.shi
+ * @since: 2019/5/24 14:36
+ * @history: 1.2019/5/24 created by youchuang.shi
  */
 
 @Controller
@@ -24,11 +27,11 @@ public class FactoryController {
      * 测试方法
      * @return 跳转首页
      */
-    @GetMapping("/getFactory")
+/*    @GetMapping("/getFactory")
     @ResponseBody
-    public List<Factory> listFactory(){
+    public Factory listFactory(){
         return factoryService.listFactory();
-    }
+    }*/
 
     @GetMapping("/index")
     public String getUrl(){
