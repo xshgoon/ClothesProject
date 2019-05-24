@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
     <title>Home</title>
     <meta charset="UTF-8"/>
@@ -31,8 +31,8 @@
                             <div class="menu">
                                 <a class="toggleMenu" href="#"><img src="../images/menu-icon.png" alt="" /> </a>
                                 <ul class="nav" id="nav">
-                                    <li><a id="now" href="/factory/index">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-                                    <li><a href="/factory/order">订单中心</a></li>
+                                    <li><a id="now" href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                                    <li><a href="order.html">订单中心</a></li>
                                     <li><a href="plant.html">工厂中心</a></li>
                                     <li><a href="personage.html">个人中心</a></li>
                                     <li><a href="about.html">关于我们</a></li>
@@ -69,8 +69,9 @@
                 <h4 id="h4_info">请输入注册信息</h4>
                 <form action="" method="post">
                     <input type="text" name="pn" value="" placeholder="请输入手机号"  pattern="1[3578]\d{9}" required />
-                    <input id="pas1" type="password" name="password" value="" placeholder="请输入密码,6-16位字母或数字组成" pattern="[\dA-Za-z]{6,16}" required />
-                    <input id="pas2" type="password" name="password2" value="" placeholder="请再次输入密码"/>
+                    <input type="text" name="username" value="" placeholder="您的昵称，最少3个字母或数字，最长不超过10个哦" pattern="[\dA-Za-z]{3,10}" required>
+                    <input id="pas1" type="password" name="password" value="" placeholder="请输入密码,最少6个字母或数字，最长不超过18个哦" pattern="[\dA-Za-z]{6,18}" required />
+                    <input id="pas2" type="password" name="password2" value="" placeholder="请再次输入密码~" pattern="[\dA-Za-z]{6,18}" required/>
                     <input id="signup_button" type="submit"  value="注册"/>
                 </form>
             </div>
@@ -188,7 +189,7 @@
             <div class="news-bottom">
                 <div class="col-md-6 news-bottom-left">
                     <a href="details_plant.html" class="b-link-stripe b-animate-go  thickbox">
-                        <img class="port-pic img-responsive" src="../images/one-2.jpg"/>
+                        <img class="port-pic" class="img-responsive" id="image-plant1" src="../images/one-2.jpg"//src="../images/wW4DmyVMcG.jpg"/>
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left b-from   b-delay03 ">
                                 <span>东莞市佛灵服饰有限公司</span>
@@ -220,7 +221,7 @@
                 <div class="clearfix"> </div>
                 <div class="news-btm1">
                     <a href="details_plant.html" class="b-link-stripe b-animate-go  thickbox">
-                        <img class="port-pic img-responsive" src="../images/fd-btm1.jpg" />
+                        <img class="port-pic" class="img-responsive" src="../images/fd-btm1.jpg" />
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left b-left   b-delay03 ">
                                 <span>东莞市佛灵服饰有限公司</span>

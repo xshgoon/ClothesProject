@@ -66,8 +66,9 @@
 				<h4 id="h4_info">请输入注册信息</h4>
 				<form action="" method="post">
 					<input type="text" name="pn" value="" placeholder="请输入手机号"  pattern="1[3578]\d{9}" required />
-					<input id="pas1" type="password" name="password" value="" placeholder="请输入密码,6-16位字母或数字组成" pattern="[\dA-Za-z]{6,16}" required />
-					<input id="pas2" type="password" name="password2" value="" placeholder="请再次输入密码"/>
+					<input type="text" name="username" value="" placeholder="您的昵称，最少3个字母或数字，最长不超过10个哦" pattern="[\dA-Za-z]{3,10}" required>
+					<input id="pas1" type="password" name="password" value="" placeholder="请输入密码,最少6个字母或数字，最长不超过18个哦" pattern="[\dA-Za-z]{6,18}" required />
+					<input id="pas2" type="password" name="password2" value="" placeholder="请再次输入密码~" pattern="[\dA-Za-z]{6,18}" required/>
 					<input id="signup_button" type="submit"  value="注册"/>
 				</form>
 			</div>
