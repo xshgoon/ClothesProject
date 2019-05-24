@@ -1,8 +1,11 @@
 package com.xp.clothes.controller;
 
+import com.xp.clothes.bean.Userxp;
 import com.xp.clothes.service.UserService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 
@@ -18,8 +21,16 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    public String register(){
-
-        return "html/index";
+    /**
+     * 用户注册
+     * @param user
+     * @return
+     */
+    @PostMapping("/rejister")
+    @ResponseBody
+    public String register(Userxp user){
+        return userService.rejester(user);
     }
+
+
 }
