@@ -9,6 +9,6 @@
     <javaClientGenerator targetPackage="com.xp.clothes.mapper" targetProject="ClothesProject/src/main/java" type="XMLMAPPER" />
     <table schema="factory" tableName="Factory"></table>
     <table schema="order" tableName="Order"></table>
-    <table schema="user" tableName="User"></table>
+    <table schema="userxp" tableName="Userxp"></table>
   </context>
 </generatorConfiguration>

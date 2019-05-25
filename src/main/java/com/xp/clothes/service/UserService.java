@@ -19,39 +19,58 @@ public class UserService {
     @Resource
     private UserxpMapper userxpMapper;
 
+
     /**
-     * 用户注册接口
+     * 注册接口
      *
      * @param user
      * @return
      */
-    public String rejester(Userxp user) {
+    public Boolean rejester(Userxp user) {
         if (user != null) {
-            if(checkUser(user.getUsername())){
-                return "用户名已存在！";
-            }else{
+            if (checkUser(user.getUsername())) {
                 user.setPassword(PasswordUtil.md5(user.getUsername(), user.getPassword()));
                 userxpMapper.insertSelective(user);
-                return "注册成功！";
+                return true;
             }
-        }else{
-            return "注册失败！";
         }
-
+        return false;
     }
 
     /**
-     * 校验用户名是否重复
+     *
+     * @param user
+     * @return
+     */
+    public Userxp login(Userxp user) {
+        if (user != null) {
+            user.setPassword(PasswordUtil.md5(user.getUsername(), user.getPassword()));
+            return userxpMapper.queryUser(user);
+        }
+        return null;
+    }
+
+
+    /**
+     * 校验接口
      *
      * @param userName
      * @return
      */
     public Boolean checkUser(String userName) {
-        List<Userxp> userxps = userxpMapper.checkUser(userName);
-        if (userxps != null && userxps.size() > 0) {
-           return false;
-        }else {
+        if (userName == null) {
+            return false;
+        }
+        int count = userxpMapper.checkUser(userName);
+        if (count > 0) {
+            return false;
+        } else {
             return true;
         }
     }
+
+    public List<Userxp> test() {
+        return userxpMapper.selectByExample(null);
+    }
+
 }
