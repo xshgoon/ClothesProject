@@ -4,6 +4,7 @@
 	<title>个人中心</title>
 	<meta charset="UTF-8"/>
 	<link href="../css/home.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../css/personage.css">
 	<script src="../js/jquery-1.11.0.min.js"></script>
 	<script src="../js/home.js"></script>
 </head>
@@ -22,7 +23,7 @@
 		<!--登录注册-->
 		<div class="top-nav">
 			<ul>
-				<li class="active"><a id="login_a" class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span>登 录</a></li>
+                                <li class="active"><a id="login_a" class="play-icon popup-with-zoom-anim" href="#small-dialog">登 录</a></li>
 				<li><a id="signup_a" class="play-icon popup-with-zoom-anim" href="#small-dialog1">注 册</a></li>
 			</ul>
 		</div>
@@ -48,15 +49,21 @@
 	<!--</div>-->
 	<!--</div>-->
 
+        <script  src="../jQueryValidation/jquery-3.3.1.js"></script>
+        <script  src="../jQueryValidation/jquery.validationEngine-zh_CN.js"></script>
+        <script  src="../jQueryValidation/jquery.validationEngine.min.js"></script>
+        <script  src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
+        <script  src="../js/register.js"></script>
+        <script  src="../js/login.js"></script>
 	<!---登录框---->
 	<div id="small-dialog" class="mfp-hide">
 		<div class="login">
 			<h3>登录</h3>
 			<h4>请输入帐号密码</h4>
-			<form action="" method="post">
-				<input type="text" name="pn" value="" placeholder="请输入手机号" pattern="1[3578]\d{9}" required/>
-				<input type="password" name="password" value="" placeholder="请输入密码" pattern="[\dA-Za-z]{6,16}" required/>
-				<input type="submit" value="登录" />
+                <form data-th-action="@{/user/login}" method="post" id="login">
+                    <input type="text" id="loginName" name="pn" value="" placeholder="请输入用户名" pattern="[\dA-Za-z]{3,10}" required/>
+                    <input type="password" id="loginPwd" name="password" value="" placeholder="请输入密码" pattern="[\dA-Za-z]{6,16}" required/>
+                    <button type="submit">登录</button>
 			</form>
 		</div>
 	</div>
@@ -66,12 +73,13 @@
 		<div class="signup">
 			<h3>注册</h3>
 			<h4 id="h4_info">请输入注册信息</h4>
-			<form action="" method="post">
-				<input type="text" name="pn" value="" placeholder="请输入手机号"  pattern="1[3578]\d{9}" required />
-				<input type="text" name="username" value="" placeholder="您的昵称，最少3个字母或数字，最长不超过10个哦" pattern="[\dA-Za-z]{3,10}" required>
+                <form data-th-action="@{/user/register}" method="post" id="register">
+                    <input type="text" id="pn" value="" placeholder="请输入手机号"  pattern="1[3578]\d{9}" required />
+                    <input type="text" id="username" value="" placeholder="您的用户名，最少3个字母或数字，最长不超过10个哦" pattern="[\dA-Za-z]{3,10}" required>
 				<input id="pas1" type="password" name="password" value="" placeholder="请输入密码,最少6个字母或数字，最长不超过18个哦" pattern="[\dA-Za-z]{6,18}" required />
 				<input id="pas2" type="password" name="password2" value="" placeholder="请再次输入密码~" pattern="[\dA-Za-z]{6,18}" required/>
-				<input id="signup_button" type="submit"  value="注册"/>
+				<br>
+				<button id="signup_button" type="submit">注册</button>
 			</form>
 		</div>
 	</div>
@@ -81,12 +89,102 @@
 
 
 <!--starts-blog-->
-<div class="contact">
-	<div class="center">
-		<div>
-
+<div class="body">
+	<!--账号管理模块-->
+	<div class="self">
+		<img src="../images/headProtrait/xiamu/02.jpg" alt="">
+		<div class="line">
+			<!--昵称-->
+			<li>xshgoon</li>
+			<!--联系电话-->
+			<li>18153843306</li>
 		</div>
-		<div></div>
+	</div>
+	<!--订单模块-->
+	<div class="orderList">
+		<h4>您发布的订单</h4>
+		<li>
+			<div>
+				<p><a href="details_order.html" target="_self"> 男装裤子外发</a></p>
+				<span><img src="../images/WeyELPpkIh.jpg"/></span>
+			</div>
+			<div>
+				<p>产品类别：梭织服装</p>
+				<p>产品档次：中低档</p>
+			</div>
+			<div>
+				<p>订单类型：包公包料</p>
+				<p>预计数量：1000件</p>
+			</div>
+			<div>
+				<p>发布日期：2018年11月11日</p>
+			</div>
+			<div>
+				<input type="button" value="立即接单" />
+				<p>广东省东莞市</p>
+			</div>
+		</li>
+		<li>
+			<div>
+				<p><a href="details_order.html" target="_self"> 男装裤子外发</a></p>
+				<span><img src="../images/WeyELPpkIh.jpg"/></span>
+			</div>
+			<div>
+				<p>产品类别：梭织服装</p>
+				<p>产品档次：中低档</p>
+			</div>
+			<div>
+				<p>订单类型：包公包料</p>
+				<p>预计数量：1000件</p>
+			</div>
+			<div>
+				<p>发布日期：2018年11月11日</p>
+			</div>
+			<div>
+				<input type="button" value="立即接单" />
+				<p>广东省东莞市</p>
+			</div>
+		</li>
+	</div>
+	<!--工厂模块-->
+	<div class="plantList">
+		<h4>您发布的工厂</h4>
+		<li>
+			<div>
+				<span><img src="../images/wW4DmyVMcG.jpg"/></span>
+			</div>
+			<div>
+				<p><a href="details_plant.html" target="_self"> 东莞市佛灵服饰有限公司</a> <span>快工厂</span></p><br>
+				<p>订单类型：清加工/包公包料</p>
+				<p>生产类别：梭织服装、中低档</p>
+			</div>
+			<div>
+				<p>工厂规模：100人以上</p>
+				<p>发布日期：2018年11月11日</p>
+			</div>
+			<div>
+				<input type="button" value="发起洽谈" />
+				<p>广东省东莞市</p>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span><img src="../images/wW4DmyVMcG.jpg"/></span>
+			</div>
+			<div>
+				<p><a href="details_plant.html" target="_self"> 东莞市佛灵服饰有限公司</a> <span>快工厂</span></p><br>
+				<p>订单类型：清加工/包公包料</p>
+				<p>生产类别：梭织服装、中低档</p>
+			</div>
+			<div>
+				<p>工厂规模：100人以上</p>
+				<p>发布日期：2018年11月11日</p>
+			</div>
+			<div>
+				<input type="button" value="发起洽谈" />
+				<p>广东省东莞市</p>
+			</div>
+		</li>
 	</div>
 </div>
 <!--end-blog-->

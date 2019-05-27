@@ -20,7 +20,7 @@
 			<!--登录注册-->
 			<div class="top-nav">
 				<ul>
-					<li class="active"><a id="login_a" class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span>登 录</a></li>
+                                <li class="active"><a id="login_a" class="play-icon popup-with-zoom-anim" href="#small-dialog">登 录</a></li>
 					<li><a id="signup_a" class="play-icon popup-with-zoom-anim" href="#small-dialog1">注 册</a></li>
 				</ul>
 			</div>
@@ -46,15 +46,21 @@
 		<!--</div>-->
 		<!--</div>-->
 
+        <script  src="../jQueryValidation/jquery-3.3.1.js"></script>
+        <script  src="../jQueryValidation/jquery.validationEngine-zh_CN.js"></script>
+        <script  src="../jQueryValidation/jquery.validationEngine.min.js"></script>
+        <script  src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
+        <script  src="../js/register.js"></script>
+        <script  src="../js/login.js"></script>
 		<!---登录框---->
 		<div id="small-dialog" class="mfp-hide">
 			<div class="login">
 				<h3>登录</h3>
 				<h4>请输入帐号密码</h4>
-				<form action="" method="post">
-					<input type="text" name="pn" value="" placeholder="请输入手机号" pattern="1[3578]\d{9}" required/>
-					<input type="password" name="password" value="" placeholder="请输入密码" pattern="[\dA-Za-z]{6,16}" required/>
-					<input type="submit" value="登录" />
+                <form data-th-action="@{/user/login}" method="post" id="login">
+                    <input type="text" id="loginName" name="pn" value="" placeholder="请输入用户名" pattern="[\dA-Za-z]{3,10}" required/>
+                    <input type="password" id="loginPwd" name="password" value="" placeholder="请输入密码" pattern="[\dA-Za-z]{6,16}" required/>
+                    <button type="submit">登录</button>
 				</form>
 			</div>
 		</div>
@@ -64,12 +70,14 @@
 			<div class="signup">
 				<h3>注册</h3>
 				<h4 id="h4_info">请输入注册信息</h4>
-				<form action="" method="post">
-					<input type="text" name="pn" value="" placeholder="请输入手机号"  pattern="1[3578]\d{9}" required />
-					<input type="text" name="username" value="" placeholder="您的昵称，最少3个字母或数字，最长不超过10个哦" pattern="[\dA-Za-z]{3,10}" required>
-					<input id="pas1" type="password" name="password" value="" placeholder="请输入密码,最少6个字母或数字，最长不超过18个哦" pattern="[\dA-Za-z]{6,18}" required />
-					<input id="pas2" type="password" name="password2" value="" placeholder="请再次输入密码~" pattern="[\dA-Za-z]{6,18}" required/>
-					<input id="signup_button" type="submit"  value="注册"/>
+                <form data-th-action="@{/user/register}" method="post" id="register">
+                    <input type="text" id="pn" value="" placeholder="请输入手机号"  pattern="1[3578]\d{9}" required />
+                    <input type="text" id="username" value="" placeholder="您的用户名，最少3个字母或数字，最长不超过10个哦" pattern="[\dA-Za-z]{3,10}" required>
+                    <input id="pas1" type="password" name="password" value="" placeholder="请输入密码,最少6个字母或数字，最长不超过18个哦" pattern="[\dA-Za-z]{6,18}" required />
+                    <input id="pas2" type="password" name="password2" value="" placeholder="请再次输入密码~" pattern="[\dA-Za-z]{6,18}" required/>
+                    <!--<input id="signup_button" type="submit"  value="注册"/>-->
+					<br>
+                    <button id="signup_button" type="submit">注册</button>
 				</form>
 			</div>
 		</div>
