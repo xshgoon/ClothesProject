@@ -6160,7 +6160,7 @@ body a{
 div#home {
     padding: 0px 0px 0px 0px;
     position: relative;
-    height: 190px;
+    height: 180px;
 }
 .top-nav ul li a {
     color: #f1e85b;
@@ -8915,7 +8915,17 @@ margin-top: 1em;
     height: 135px;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     background: white;
     box-shadow: 3px 4px 5px #ebebeb;
+}
+.lssue{
+    width: 200px;
+    height: 50px;
+    margin-left: 500px;
+}
+.lssue:hover{
+    color: #ffb300;
+    background-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 2px 2px 2px 2px #1b242f96;
 }
