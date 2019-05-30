@@ -33,5 +33,23 @@ public class FactoryController {
         return "html/index";
     }
 
+    @GetMapping("/plant")
+    public String getPlant(){
+        return "html/plant";
+    }
 
+    @GetMapping("/order")
+    public String getOrder(){
+        return "html/order";
+    }
+
+    @GetMapping("/personage")
+    public String getPersonage(){
+        return "html/personage";
+    }
+
+    @GetMapping("/about")
+    public String getAbout(){
+        return "html/about";
+    }
 }

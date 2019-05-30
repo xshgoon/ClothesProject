@@ -22,7 +22,10 @@
                         </div>
                         <!--登录注册-->
                         <div class="top-nav">
-                            <ul>
+                            <span th:if="${session.USER!=null and session.USER.username!=null}"
+                                  th:text="${session.USER.username}">
+            </span>
+                            <ul th:if="${session.USER==null}">
                                 <li class="active"><a id="login_a" class="play-icon popup-with-zoom-anim" href="#small-dialog">登 录</a></li>
                                 <li><a id="signup_a" class="play-icon popup-with-zoom-anim" href="#small-dialog1">注 册</a></li>
                             </ul>
@@ -31,11 +34,11 @@
                             <div class="menu">
                                 <a class="toggleMenu" href="#"><img src="../images/menu-icon.png" alt="" /> </a>
                                 <ul class="nav" id="nav">
-                                    <li><a id="now" href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-                                    <li><a href="order.html">订单中心</a></li>
-                                    <li><a href="plant.html">工厂中心</a></li>
-                                    <li><a href="personage.html">个人中心</a></li>
-                                    <li><a href="about.html">关于我们</a></li>
+                                    <li><a id="now" href="/factory/index">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                                    <li><a href="/factory/order">订单中心</a></li>
+                                    <li><a href="/factory/plant">工厂中心</a></li>
+                                    <li><a href="/factory/personage">个人中心</a></li>
+                                    <li><a href="/factory/about">关于我们</a></li>
                                 </ul>
                             </div>
                             <div class="search2">
@@ -103,10 +106,10 @@
                     <img src="../images/首页图.jpg" alt="First slide">
                 </div>
                 <div class="item">
-                    <img src="../images/首页图.jpg" alt="Second slide">
+                    <img src="../images/02.jpg" alt="Second slide">
                 </div>
                 <div class="item">
-                    <img src="../images/首页图.jpg" alt="Third slide">
+                    <img src="../images/03.jpg" alt="Third slide">
                 </div>
             </div>
             <!-- 轮播（Carousel）导航 -->
@@ -130,8 +133,8 @@
             <div class="care-bottom">
                 <div class="col-md-4 c-bottom">
                     <div class="care-bottom-left">
-                        <img src="../images/WeyELPpkIh.jpg" alt="">
-                        <h4>variations of passages</h4>
+                        <img src="../images/order/10.jpg" alt="">
+                        <h4>日式百褶裙</h4>
                         <div class="view">
                             <a href="details_order.html">查看</a>
                         </div>
@@ -139,8 +142,8 @@
                 </div>
 				<div class="col-md-4 c-bottom">
 					<div class="care-bottom-middle">
-						<img src="../images/WeyELPpkIh.jpg" alt="">
-						<h4>variations of passages</h4>
+						<img src="../images/order/订单01.jpg" alt="">
+						<h4>绿色风格裙</h4>
                         <div class="view">
                             <a href="details_order.html">查看</a>
                         </div>
@@ -148,8 +151,8 @@
 				</div>
 				<div class="col-md-4 c-bottom">
 					<div class="care-bottom-right">
-						<img src="../images/WeyELPpkIh.jpg" alt="">
-						<h4>variations of passages</h4>
+						<img src="../images/order/订单02.jpg" alt="">
+						<h4>流苏领T</h4>
                         <div class="view">
                             <a href="details_order.html">查看</a>
                         </div>
@@ -160,8 +163,8 @@
             <div class="care-bottom">
                 <div class="col-md-4 c-bottom">
                     <div class="care-bottom-right">
-                        <img src="../images/WeyELPpkIh.jpg" alt="">
-                        <h4>variations of passages</h4>
+                        <img src="../images/order/订单03.jpg" alt="">
+                        <h4>情侣T恤</h4>
                         <div class="view">
                             <a href="details_order.html">查看</a>
                         </div>
@@ -169,8 +172,8 @@
                 </div>
                 <div class="col-md-4 c-bottom">
                     <div class="care-bottom-left">
-                        <img src="../images/WeyELPpkIh.jpg" alt="">
-                        <h4>variations of passages</h4>
+                        <img src="../images/order/订单04.jpg" alt="">
+                        <h4>蓝色T恤</h4>
                         <div class="view">
                             <a href="details_order.html">查看</a>
                         </div>
@@ -178,8 +181,8 @@
                 </div>
                 <div class="col-md-4 c-bottom">
                     <div class="care-bottom-middle">
-                        <img src="../images/WeyELPpkIh.jpg" alt="">
-                        <h4>variations of passages</h4>
+                        <img src="../images/order/订单05.jpg" alt="">
+                        <h4>气质职业衬衫</h4>
                         <div class="view">
                             <a href="details_order.html">查看</a>
                         </div>
@@ -198,7 +201,7 @@
             <div class="news-bottom">
                 <div class="col-md-6 news-bottom-left">
                     <a href="details_plant.html" class="b-link-stripe b-animate-go  thickbox">
-                        <img class="port-pic img-responsive" id="image-plant1" src="../images/one-2.jpg"/>
+                        <img class="port-pic img-responsive"  src="../images/factory/factory07.jpg" style="width: 540px;height: 530px"/>
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left b-from   b-delay03 ">
                                 <span>东莞市佛灵服饰有限公司</span>
@@ -210,7 +213,7 @@
                 <div class="col-md-6 news-bottom-left">
                     <div class="news-btm">
                         <a href="details_plant.html" class="b-link-stripe b-animate-go  thickbox">
-                            <img class="port-pic" src="../images/apple.jpg" />
+                            <img class="port-pic" src="../images/factory/factory06.jpg" style="height: 250px;width: 540px"/>
                             <div class="b-wrapper">
                                 <h2 class="b-animate b-from-left    b-delay03 ">
                                     <button>点我查看~</button>
@@ -219,7 +222,7 @@
                         </a>
                     </div>
                     <a href="details_plant.html" class="b-link-stripe b-animate-go  thickbox">
-                        <img class="port-pic" src="../images/veg.jpg" />
+                        <img class="port-pic" src="../images/factory/factory08.jpg" style="height: 250px;width: 540px"/>
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left    b-delay03 ">
                                 <button>点我查看~</button>
@@ -228,12 +231,44 @@
                     </a>
                 </div>
                 <div class="clearfix"> </div>
-                <div class="news-btm1">
+                <!--<div class="news-btm1">-->
+                    <!--<a href="details_plant.html" class="b-link-stripe b-animate-go  thickbox">-->
+                        <!--<img class="port-pic img-responsive" src="../images/factory/factory02.jpg" style="width: 1000px;height: 300px"/>-->
+                        <!--<div class="b-wrapper">-->
+                            <!--<h2 class="b-animate b-from-left b-left   b-delay03 ">-->
+                                <!--<span>广州市海州区美纱制衣厂</span>-->
+                                <!--<button>点我查看~</button>-->
+                            <!--</h2>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <hr>
+                <div class="col-md-6 news-bottom-left">
                     <a href="details_plant.html" class="b-link-stripe b-animate-go  thickbox">
-                        <img class="port-pic img-responsive" src="../images/fd-btm1.jpg" />
+                        <img class="port-pic img-responsive"  src="../images/factory/factory10.jpg" style="width: 540px;height: 530px"/>
                         <div class="b-wrapper">
-                            <h2 class="b-animate b-from-left b-left   b-delay03 ">
-                                <span>东莞市佛灵服饰有限公司</span>
+                            <h2 class="b-animate b-from-left b-from   b-delay03 ">
+                                <span>云流服饰</span>
+                                <button>点我查看~</button>
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 news-bottom-left">
+                    <div class="news-btm">
+                        <a href="details_plant.html" class="b-link-stripe b-animate-go  thickbox">
+                            <img class="port-pic" src="../images/factory/factory02.jpg" style="height: 250px;width: 540px"/>
+                            <div class="b-wrapper">
+                                <h2 class="b-animate b-from-left    b-delay03 ">
+                                    <button>点我查看~</button>
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="details_plant.html" class="b-link-stripe b-animate-go  thickbox">
+                        <img class="port-pic" src="../images/factory/factory04.jpg" style="height: 250px;width: 540px"/>
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
                                 <button>点我查看~</button>
                             </h2>
                         </div>

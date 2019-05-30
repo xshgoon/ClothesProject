@@ -20,7 +20,7 @@ $(function(){
                         layer.msg(result.errorMsg,{icon:5});
                     }else{
                         layer.msg("登录成功！",{icon:6})
-                        //window.location.href = "/show/shouye";
+                        window.location.href = "/factory/index";
                     }
                 }
             })

@@ -91,6 +91,7 @@ a:hover{
 #list img{
     display: inline-block;
     width: 120px;
+    height: 130px;
 }
 #list ul div:nth-child(2),
 #list ul div:nth-child(3),
